@@ -4,17 +4,17 @@
   
     
     <entry>
-      <title>姜子牙</title>
-      <link href="2020/10/04/jiang-zi-ya/"/>
-      <url>2020/10/04/jiang-zi-ya/</url>
+      <title>正则判断身份证是否合法</title>
+      <link href="2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/"/>
+      <url>2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/</url>
       
-        <content type="html"><![CDATA[<h1 id="姜子牙"><a href="#姜子牙" class="headerlink" title="姜子牙"></a>姜子牙</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="python正则判断身份证是否合法"><a href="#python正则判断身份证是否合法" class="headerlink" title="python正则判断身份证是否合法"></a>python正则判断身份证是否合法</h1><pre><code>    import re    while 1:        a = input(&#39;请输入身份证号:&#39;)        ret = (re.match(&#39;(^\d&#123;15&#125;$)|(^\d&#123;18&#125;$)|(^\d&#123;17&#125;(\d|X|x)$)&#39;, a))        ret2= (re.match(&#39;^[1 - 9]\d&#123;5&#125;\d&#123;2&#125;((0[1 - 9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;2&#125;$&#39;,a))        if ret or ret2:            print(&#39;输入身份证号正确!&#39;)            str_len = len(a)            print(str_len)            if str_len == 18:                s = a[16]                sex = int(s)                # print(type(sex))                if sex % 2 == 0:                    print(&#39;该身份证号为女性&#39;)                else:                    print(&#39;该身份证为男性&#39;)            elif str_len == 15:                s = a[14]                sex = int(s)                if sex % 2 == 0:                    print(&#39;该身份证号为女性&#39;)                else:                    print(&#39;该身份证为男性&#39;)            break        else:            print(&#39;请输入正确的身份证号&#39;)</code></pre>]]></content>
       
       
       
         <tags>
             
-            <tag> 电影 </tag>
+            <tag> python </tag>
             
         </tags>
       
@@ -27,7 +27,7 @@
       <link href="2020/10/04/python-pan-duan-he-xun-huan-an-li/"/>
       <url>2020/10/04/python-pan-duan-he-xun-huan-an-li/</url>
       
-        <content type="html"><![CDATA[<h1 id="python判断和循环案例"><a href="#python判断和循环案例" class="headerlink" title="python判断和循环案例"></a>python判断和循环案例</h1><h2 id="正负相加"><a href="#正负相加" class="headerlink" title="正负相加"></a>正负相加</h2><ul><li>编写程序计算如下数列的值：‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪1-2+3-4…966，其中，所有数字为整数，从1开始递增，奇数为正，偶数为负<pre><code>  s=0  for i in range(1,967):      if i%2==0:          i=-i      s+=i</code></pre>print(s)<h2 id="水仙花数"><a href="#水仙花数" class="headerlink" title="水仙花数"></a>水仙花数</h2></li><li>“水仙花数”是指一个三位整数，其各位数字的3次方和等于该数本身。例如：ABC是一个“3位水仙花数”，则：A的3次方+B的3次方+C的3次方=ABC。请按照从小到大的顺序输出所有的3位水仙花数，用“逗号”分隔输出结果。<pre><code>  bs=0  for i in range(100,1000):      a=i//100      bs=i%100      b=bs//10      c=bs%10      if a**3+b**3+c**3==i:          print(i)</code></pre><h2 id="登入系统"><a href="#登入系统" class="headerlink" title="登入系统"></a>登入系统</h2></li><li>给用户三次输入用户名和密码的机会，要求如下：</li><li>如输入第一行输入用户名为‘Kate’,第二行输入密码为‘666666’，输出‘登录成功！’，退出程序；</li><li>当一共有3次输入用户名或密码不正确输出“3次用户名或者密码均有误！退出程序。<pre><code>  i=0  for i in range(3):      yourname=input(&quot;请输入您的用户名:&quot;)      password=input(&quot;请输入您的密码:&quot;)      if yourname==&#39;Kate&#39; and password==&#39;666666&#39;:          print(&quot;登入成功&quot;)          break;      else:          print(&quot;警告:用户或密码错误,您还有&quot;,2-i,&quot;次机会&quot;)      i+=1  if i==3:      print(&quot;三次均错误，系统已锁定&quot;)</code></pre></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="python判断和循环案例"><a href="#python判断和循环案例" class="headerlink" title="python判断和循环案例"></a>python判断和循环案例</h1><h2 id="正负相加"><a href="#正负相加" class="headerlink" title="正负相加"></a>正负相加</h2><ul><li>编写程序计算如下数列的值：‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪1-2+3-4…966，其中，所有数字为整数，从1开始递增，奇数为正，偶数为负<pre><code>  s=0  for i in range(1,967):      if i%2==0:          i=-i      s+=i  print(s)</code></pre><h2 id="水仙花数"><a href="#水仙花数" class="headerlink" title="水仙花数"></a>水仙花数</h2></li><li>“水仙花数”是指一个三位整数，其各位数字的3次方和等于该数本身。例如：ABC是一个“3位水仙花数”，则：A的3次方+B的3次方+C的3次方=ABC。请按照从小到大的顺序输出所有的3位水仙花数，用“逗号”分隔输出结果。<pre><code>  bs=0  for i in range(100,1000):      a=i//100      bs=i%100      b=bs//10      c=bs%10      if a**3+b**3+c**3==i:          print(i)</code></pre><h2 id="登入系统"><a href="#登入系统" class="headerlink" title="登入系统"></a>登入系统</h2></li><li>给用户三次输入用户名和密码的机会，要求如下：</li><li>如输入第一行输入用户名为‘Kate’,第二行输入密码为‘666666’，输出‘登录成功！’，退出程序；</li><li>当一共有3次输入用户名或密码不正确输出“3次用户名或者密码均有误！退出程序。<pre><code>  i=0  for i in range(3):      yourname=input(&quot;请输入您的用户名:&quot;)      password=input(&quot;请输入您的密码:&quot;)      if yourname==&#39;Kate&#39; and password==&#39;666666&#39;:          print(&quot;登入成功&quot;)          break;      else:          print(&quot;警告:用户或密码错误,您还有&quot;,2-i,&quot;次机会&quot;)      i+=1  if i==3:      print(&quot;三次均错误，系统已锁定&quot;)</code></pre></li></ul>]]></content>
       
       
       
