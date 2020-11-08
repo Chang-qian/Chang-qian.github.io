@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Css权值问题</title>
+      <link href="2020/11/03/css-quan-chong/"/>
+      <url>2020/11/03/css-quan-chong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Css权重问题"><a href="#Css权重问题" class="headerlink" title="Css权重问题"></a>Css权重问题</h1><h2 id="权重概念"><a href="#权重概念" class="headerlink" title="权重概念"></a>权重概念</h2><ul><li>权重，是一个相对的概念，是针对某一指标而言。某一指标的权重是指该指标在整体评价中的相对重要程度。权重系数，是表示某一指标项在指标项系统中的重要程度，它表示在其它指标项不变的情况下，这一指标项的变化，对结果的影响。<h2 id="权重的理解"><a href="#权重的理解" class="headerlink" title="权重的理解"></a>权重的理解</h2></li><li>每一个Css选择器都有其对应的值,也就是权重的值</li><li>Css按照权值的大小，确定定义样式规则的 优先级次序；<h2 id="优先级的规则"><a href="#优先级的规则" class="headerlink" title="优先级的规则"></a>优先级的规则</h2></li><li>1.css选择规则的权值不同时，权值高的优先；</li><li>2.css选择规则的权值相同时，后定义的规则优先；</li><li>3.css属性后面加 !important 时，无条件绝对优先；<h2 id="权值的计算"><a href="#权值的计算" class="headerlink" title="权值的计算"></a>权值的计算</h2></li><li>下图为网上的图,它非常详细的描述了权值的等级划分<br><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604418956065&di=fc83fc97f73dc68535f7fb65186fc9b7&imgtype=0&src=http://d.hiphotos.baidu.com/zhidao/pic/item/b219ebc4b74543a9c1d979521b178a82b8011469.jpg"></li><li>1.第一等级，内联样式，如style=””，权值为1000;</li><li>2.第二等级，ID选择器，权值为0100;</li><li>3.第三等级，Class选择器，伪类选择器，属性选择器，权值为0010；</li><li>4.第四等级，伪元素选择器，::after，::before,权值为0000；<h2 id="权值的比较"><a href="#权值的比较" class="headerlink" title="权值的比较"></a>权值的比较</h2></li><li>权值的比较规则有三点</li><li>1.先从高等级进行比较，高等级相同时，再比较低等级的；</li><li>2.完全相同的话，就采用后者优先原则，会覆盖先前的样式；</li><li>3.属性里含有 !important时，无条件优先</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>正则判断身份证是否合法</title>
       <link href="2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/"/>
       <url>2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/</url>

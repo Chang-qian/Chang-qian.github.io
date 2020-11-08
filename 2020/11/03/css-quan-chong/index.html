@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="正则判断身份证是否合法, Chang-qian">
+    <meta name="keywords" content="Css权值问题, Chang-qian">
     <meta name="description" content="我知这世界本如露水般短暂，可是，可是。。。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>正则判断身份证是否合法 | Chang-qian</title>
+    <title>Css权值问题 | Chang-qian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">正则判断身份证是否合法</h1>
+                    <h1 class="description center-align post-title">Css权值问题</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/Css/">
+                                <span class="chip bg-color">Css</span>
                             </a>
                         
                     </div>
@@ -446,7 +446,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-21
+                    2020-11-03
                 </div>
                 
 
@@ -462,33 +462,23 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="python正则判断身份证是否合法"><a href="#python正则判断身份证是否合法" class="headerlink" title="python正则判断身份证是否合法"></a>python正则判断身份证是否合法</h1><pre><code>    import re
-    while 1:
-        a = input(&#39;请输入身份证号:&#39;)
-        ret = (re.match(&#39;(^\d&#123;15&#125;$)|(^\d&#123;18&#125;$)|(^\d&#123;17&#125;(\d|X|x)$)&#39;, a))
-        ret2= (re.match(&#39;^[1 - 9]\d&#123;5&#125;\d&#123;2&#125;((0[1 - 9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;2&#125;$&#39;,a))
-        if ret or ret2:
-            print(&#39;输入身份证号正确!&#39;)
-            str_len = len(a)
-            print(str_len)
-            if str_len == 18:
-                s = a[16]
-                sex = int(s)
-                # print(type(sex))
-                if sex % 2 == 0:
-                    print(&#39;该身份证号为女性&#39;)
-                else:
-                    print(&#39;该身份证为男性&#39;)
-            elif str_len == 15:
-                s = a[14]
-                sex = int(s)
-                if sex % 2 == 0:
-                    print(&#39;该身份证号为女性&#39;)
-                else:
-                    print(&#39;该身份证为男性&#39;)
-            break
-        else:
-            print(&#39;请输入正确的身份证号&#39;)</code></pre>
+                <h1 id="Css权重问题"><a href="#Css权重问题" class="headerlink" title="Css权重问题"></a>Css权重问题</h1><h2 id="权重概念"><a href="#权重概念" class="headerlink" title="权重概念"></a>权重概念</h2><ul>
+<li>权重，是一个相对的概念，是针对某一指标而言。某一指标的权重是指该指标在整体评价中的相对重要程度。权重系数，是表示某一指标项在指标项系统中的重要程度，它表示在其它指标项不变的情况下，这一指标项的变化，对结果的影响。<h2 id="权重的理解"><a href="#权重的理解" class="headerlink" title="权重的理解"></a>权重的理解</h2></li>
+<li>每一个Css选择器都有其对应的值,也就是权重的值</li>
+<li>Css按照权值的大小，确定定义样式规则的 优先级次序；<h2 id="优先级的规则"><a href="#优先级的规则" class="headerlink" title="优先级的规则"></a>优先级的规则</h2></li>
+<li>1.css选择规则的权值不同时，权值高的优先；</li>
+<li>2.css选择规则的权值相同时，后定义的规则优先；</li>
+<li>3.css属性后面加 !important 时，无条件绝对优先；<h2 id="权值的计算"><a href="#权值的计算" class="headerlink" title="权值的计算"></a>权值的计算</h2></li>
+<li>下图为网上的图,它非常详细的描述了权值的等级划分<br><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604418956065&di=fc83fc97f73dc68535f7fb65186fc9b7&imgtype=0&src=http://d.hiphotos.baidu.com/zhidao/pic/item/b219ebc4b74543a9c1d979521b178a82b8011469.jpg"></li>
+<li>1.第一等级，内联样式，如style=””，权值为1000;</li>
+<li>2.第二等级，ID选择器，权值为0100;</li>
+<li>3.第三等级，Class选择器，伪类选择器，属性选择器，权值为0010；</li>
+<li>4.第四等级，伪元素选择器，::after，::before,权值为0000；<h2 id="权值的比较"><a href="#权值的比较" class="headerlink" title="权值的比较"></a>权值的比较</h2></li>
+<li>权值的比较规则有三点</li>
+<li>1.先从高等级进行比较，高等级相同时，再比较低等级的；</li>
+<li>2.完全相同的话，就采用后者优先原则，会覆盖先前的样式；</li>
+<li>3.属性里含有 !important时，无条件优先</li>
+</ul>
 
             </div>
             <hr/>
@@ -514,7 +504,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://chang-qian.github.io/2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/">https://chang-qian.github.io/2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/</a>
+                    <a href="https://chang-qian.github.io/2020/11/03/css-quan-chong/">https://chang-qian.github.io/2020/11/03/css-quan-chong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -552,8 +542,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/Css/">
+                                    <span class="chip bg-color">Css</span>
                                 </a>
                             
                         </div>
@@ -721,9 +711,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/11/03/css-quan-chong/">
                     <div class="card-image">
@@ -741,9 +732,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -752,6 +743,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -770,13 +762,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/04/python-pan-duan-he-xun-huan-an-li/">
+                <a href="/2020/10/21/zheng-ze-pan-duan-shen-fen-zheng-shi-fou-he-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="python判断和循环案例">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="正则判断身份证是否合法">
                         
-                        <span class="card-title">python判断和循环案例</span>
+                        <span class="card-title">正则判断身份证是否合法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -787,7 +779,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-21
                             </span>
                         <span class="publish-author">
                             
